@@ -26,8 +26,8 @@ form:
             route:
               type: select
               label: Parent
-              @data-options: '\Grav\Common\Page\Pages::parents'
-              @data-default: '\Grav\Plugin\admin::route'
+              '@data-options': '\Grav\Common\Page\Pages::parents'
+              '@data-default': '\Grav\Plugin\admin::route'
               options:
                 '': '- Root -'
 
@@ -132,7 +132,7 @@ form:
               type: select
               label: Default Child Type
               default: default
-              @data-options: '\Grav\Common\Page\Pages::types'
+              '@data-options': '\Grav\Common\Page\Pages::types'
 
             header.order_by:
               type: hidden
@@ -154,4 +154,4 @@ form:
             media:
               type: list
               add: Add file
-              @import: 'medium/file'
+              '@import': 'medium/file'
